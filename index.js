@@ -6,9 +6,12 @@ const httpServer = express();
 httpServer.use(bodyParser.json());
 
 httpServer.listen(3000, "0.0.0.0", () => {
-    console.log("server started", "webserver is live 🌐");
+    console.log("server started");
     
 });
+
+ 
+
 const CreateRoom = [
   {
     NumberOfSeatsAvailable: 1000,
@@ -90,6 +93,10 @@ const HowManyTB = [
     BookingStatus: "inactive",
   },
 ];
+
+httpServer.get("/", function (request, response) {
+  response.send("webserver is live 🌐");
+});
 
 httpServer.post("/CreateRoom", (req, res) => {  
   CreateRoom.push(req.body);
