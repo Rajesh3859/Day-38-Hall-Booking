@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  },
+  "name": "day-38-hall-booking",
+  "version": "1.0.0",
+  "description": "to creating a hall booking application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "rajeshvjM1@gamil.com",
+  "license": "MIT"
+}
